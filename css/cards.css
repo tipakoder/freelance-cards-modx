@@ -1,0 +1,150 @@
+.container {
+    margin: 0 auto;
+    padding: 16px 0;
+
+    max-width: 1080px;
+    width: 100%;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.card-block {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 4px;
+    background-color: #F3FBFE;
+
+    padding: 2px;
+
+    transition: 0.3s box-shadow;
+}
+
+.card-block:hover {
+    box-shadow: 0px 0px 28px rgba(244,251,254, 1);
+}
+
+.card-block-cover {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+}
+
+.card-block-cover img {
+    width: 100%;
+
+    border-radius: 4px;
+}
+
+.card-block-discount {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+
+    padding: 8px 16px;
+    
+    border-radius: 8px;
+
+    color: #FFF;
+    background-color: #45c93a;
+}
+
+.card-block-information {
+    display: flex;
+    grid-gap: 16px;
+    flex-direction: column;
+
+    padding: 16px;
+}
+
+.card-information-title {
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+
+.card-block-information-row {
+    display: flex;
+    align-items: center;
+}
+
+.card-row-icon {
+    margin: 0 4px 0 0;
+}
+
+.card-information-option {
+    margin: 0 8px 0 0;
+}
+
+.card-information-value {
+    margin: 0;
+}
+
+.card-information-accent {
+    color: #1EC5FE;
+}
+
+.card-information-price-block {
+    align-items: flex-end;
+}
+
+.card-information-old-price {
+    text-decoration: line-through;
+
+    font-weight: 300;
+    font-size: 18px;
+
+    margin: 0 16px 0 0;
+}
+
+.card-information-price {
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 24px;
+
+    margin: 0 8px 0 0;
+}
+
+.card-information-price-currency {
+    font-weight: 600;
+    font-size: 24px;
+
+    margin: 0;
+}
+
+.card-block-action {
+    padding: 8px 16px;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #111;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    background-color: #FFE600;
+
+    transition: 0.3s background-color;
+
+    width: 100%;
+}
+
+.card-block-action:hover {
+    background-color: #ffe56a;
+}
+
+.card-block-action:active {
+    background-color: #eacc00;
+}
