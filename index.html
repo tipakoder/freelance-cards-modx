@@ -3,27 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Cards</title>
+
+        <!-- Google иконки и шрифт Roboto, всё сделано с привязкой к нему -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/cards.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Подключение общего стиля "common" и стиля для карточек "cards" -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/cards.css">
     </head>
     <body>
         <div class="container">
+            <!-- Сетка для автоматической расстановки карточек -->
             <div class="cards-wrapper">
+
+                <!-- Карточка -->
                 <div class="card-block">
+
+                    <!-- Обложка карточки -->
                     <div class="card-block-cover">
+                        <!-- Картинка обложки -->
                         <img src="img/product_template.png" alt="product template">
+                        <!-- Скидка(если нужна) -->
                         <div class="card-block-discount">-10%</div>
                     </div>
 
+                    <!-- Основные характеристика товара -->
                     <div class="card-block-information">
+
+                        <!-- Заголовок товара -->
                         <h2 class="card-information-title">СЕПТИК ТОПАС 4</h2>
 
+                        <!-- Строчка характеристики -->
                         <div class="card-block-information-row">
+                            <!-- Иконка характеристики -->
                             <span class="card-row-icon card-information-accent material-icons md-18">people</span>
+                            <!-- Наименование характеристики -->
                             <p class="card-information-option card-information-accent">Кол-во человек:</p>
+                            <!-- Значение характеристики -->
                             <p class="card-information-value">4</p>
                         </div>
 
@@ -33,12 +52,19 @@
                             <p class="card-information-value">0.8 м3</p>
                         </div>
 
+                        <!-- Стоймость товара -->
                         <div class="card-block-information-row card-information-price-block">
+                            <!-- Прошлая стоймость товара(без скидки) -->
                             <p class="card-information-old-price">2450</p>
+                            <!-- Текущая стоймость товара -->
                             <p class="card-information-price card-information-accent">2205</p>
+                            <!-- Валюта -->
                             <p class="card-information-price-currency">руб</p>
                         </div>
 
+                        <!-- Простая кнопка(без акцентного цвета) -->
+                        <a class="card-block-simple" href="product.html">Подробнее</a>
+                        <!-- Акцентная кнопка -->
                         <button class="card-block-action">Заказать</button>
                     </div>
                 </div>
