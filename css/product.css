@@ -1,0 +1,44 @@
+.product-wrapper > .product-header {
+    display: flex;
+    align-items: center;
+}
+
+.product-header .product-header-link {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    color: #666;
+
+    text-decoration: none;
+}
+
+.product-header .product-header-link .icon{
+    font-size: 24px;
+    color: #1EC5FE;
+}
+
+.product-header .product-header-link .title{
+    text-decoration: underline;
+}
+
+.product-header .product-header-link.current-link {
+    color: #777;
+    border-bottom: 0;
+}
+
+.product-header .product-header-link.current-link .title {
+    text-decoration: none;
+}
+
+.product-header .product-header-split {
+    width: 9px;
+    height: 18px;
+    margin-right: 10px;
+
+    border-right: 1px solid #111;
+    transform: rotate(15deg);
+}
