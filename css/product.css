@@ -344,6 +344,7 @@ and (orientation: portrait) {
 
     .similar-products {
         padding: 0 64px;
+        margin-top: 128px;
     }
 
     .similar-products h3 {
