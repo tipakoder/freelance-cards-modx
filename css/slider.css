@@ -80,3 +80,30 @@
     border: 4px solid rgba(0, 0, 0, 0.5);
     opacity: 1;
 }
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .slider-wrapper .slider-view-object {
+        min-height: 50vh;
+    }
+
+    .slider-wrapper .slider-view-img {
+       height: 25vh;
+    }
+
+    .slider-wrapper .slider-view-object .slider-view-arrow {
+        top: calc(50% - 64px);
+        width: 128px;
+        height: 128px;
+        font-size: 4em;
+    }
+
+    .slider-wrapper .slider-preview-wrapper .slider-preview-img {
+        min-height: 12em;
+        min-width: 12em;
+    }
+
+}

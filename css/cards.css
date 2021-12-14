@@ -1,3 +1,27 @@
+.cards-sort {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 8px;
+
+    margin-bottom: 32px;
+}
+
+.cards-sort .title {
+    margin: 0;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.cards-sort .cards-sort-input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #1EC5FE;
+}
+
 .cards-wrapper {
     display: grid;
     grid-gap: 32px;
@@ -165,4 +189,84 @@
 
 .card-block-simple:active {
     background-color: #adc4c2;
+}
+
+/* ADAPTIVE DESIGN */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+    .cards-sort {
+        flex-direction: column;
+        padding: 0 32px;
+    }
+
+    .cards-sort .title {
+        font-size: 3em;
+        align-self: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .cards-sort-input {
+        font-size: 3em;
+        width: -moz-available;
+        width: -webkit-fill-available;
+    }
+
+    .cards-wrapper {
+        display: grid;
+        grid-gap: 32px;
+        grid-template-columns: 1fr;
+
+        padding: 0 32px;
+    }
+
+    .card-block .card-block-cover .card-block-discount {
+        font-size: 4em;
+        top: 1em;
+    }
+
+    .card-block .card-block-information {
+        padding: 2em;
+        grid-gap: 2em;
+    }
+
+    .card-block .card-information-title {
+        font-size: 4em;
+    }
+
+    .card-block .card-block-information-row {
+        font-size: 3em;
+    }
+
+    .card-block .card-block-information-row .card-row-icon {
+        font-size: 1.2em;
+        margin-right: 0.5em;
+    }
+
+    .card-block .card-information-option {
+        margin-right: 0.8em;
+    }
+
+    .card-information-old-price {
+        font-size: 1.2em;
+        margin-right: 0.5em;
+    }
+
+    .card-information-price {
+        font-size: 1.8em;
+        margin-right: 0.2em;
+    }
+
+    .card-information-price-currency {
+        font-size: 1.5em;
+    }
+
+    .card-block-simple,
+    .card-block-action{
+        font-size: 4em;
+    }
 }
