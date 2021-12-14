@@ -2,14 +2,16 @@
  * Функция создающая слайдер на основе параметров
  * @param id
  * @param images
+ * @param slider_arrow_left
+ * @param slider_arrow_right
  * @constructor
  */
 const Slider = (
     {
         id,
         images,
-        slider_arrow_left,
-        slider_arrow_right
+        slider_arrow_left = `<span class="icon material-icons">chevron_left</span>`,
+        slider_arrow_right = `<span class="icon material-icons">navigate_next</span>`
     }
 ) => {
     const slider_object = document.getElementById(id);
